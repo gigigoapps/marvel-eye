@@ -1,6 +1,6 @@
 {
     "source" : {
-        "local" : "127.0.0.1:8008"
+        "local" : "https://sdk-demo-1.s.orchextra.io"
     },
     "types": [
         {
