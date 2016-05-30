@@ -1,0 +1,46 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>marvel eye</title>
+	<style>
+		body,html{
+			height: 100%;
+			min-height: 100%;
+		}
+		body{
+			cursor: default;
+			text-align: center;
+		  	font-family: monospace;
+
+		  	background-color : #222;
+		  	color: #ddd;
+		}
+		h1{
+			color:#EBD699;
+			font-size: 14px;
+			padding: 30px 0 50px 0;
+			margin: 0;
+			font-weight: normal;
+		}
+		a{
+			display: inline-block;
+			color:#F09772;
+			text-decoration: none;
+			font-size: 24px;
+			padding: 20px 10px;
+			width: 360px;
+		}
+		a:hover{
+			color:#FE7A43;
+			background-color: #292929;
+			text-decoration: none;
+		}
+	</style>
+</head>
+<body>
+	<h1><b>marvel</b> eye</h1>
+	{% for config in configs %}
+		<a href="?c={{config}}">{{config}}</a>
+	{% endfor %}
+</body>
+</html>

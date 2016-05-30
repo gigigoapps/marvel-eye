@@ -1,0 +1,56 @@
+{
+  "name": "marvel-eye",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node .",
+    "dev": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:gigigoapps/marvel-eye.git"
+  },
+  "author": "",
+  "license": "ISC",
+
+  "dependencies": {
+    "express": "^4.13.4",
+    "glob": "^7.0.3",
+    "nunjucks": "^2.4.2"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.9.0",
+    "babelify": "^7.3.0",
+    "browserify": "^13.0.1",
+    "debug": "^2.2.0",
+    "del": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-browserify": "^0.5.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-copy": "0.0.2",
+    "gulp-if": "^2.0.1",
+    "gulp-import-css": "^0.1.2",
+    "gulp-inject": "^4.1.0",
+    "gulp-jshint": "^2.0.1",
+    "gulp-ng-html2js": "^0.2.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-rev": "^7.0.0",
+    "gulp-sass": "^2.3.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.3",
+    "gulp-util": "^3.0.7",
+    "jquery": "^2.2.4",
+    "jshint": "^2.9.2",
+    "jshint-stylish": "^2.2.0",
+    "lodash": "^4.13.1",
+    "node-sass": "^3.7.0",
+    "run-sequence": "^1.2.1",
+    "socket.io-client": "^1.4.6",
+    "uglifyify": "^3.0.1",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.7.0"
+  }
+}

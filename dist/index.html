@@ -1,0 +1,81 @@
+<html ng-app="app">
+<head>
+	<meta charset="UTF-8">
+	<!-- <link href="//fonts.googleapis.com/css?family=Roboto+Condensed|Roboto+Mono" rel="stylesheet"> -->
+	<title>marvel eye</title>
+	<!-- inject-css-imports:css -->
+	<!-- endinject -->
+	<!-- inject-css-custom:css -->
+	<link rel="stylesheet" href="bundle/styles.css">
+	<!-- endinject -->
+	<!-- inject-js-bundle:js -->
+	<script src="bundle/app.js"></script>
+	<!-- endinject -->
+	<!-- Include Required Prerequisites -->
+
+</head>
+
+<body>
+	<section class="top">
+		<section class="header">
+			<div class="header-top">
+				<h1><a href="/"><b>marvel</b> eye</a> &nbsp; <i></i></h1>
+				<ul class="nav">
+					<li><i class="count_visible">Visible: <b>0</b></i></li>
+					<li><i class="count_total">Total: <b>0</b></i></li>
+					<li><a class="clear">Clear list</a></li>
+					<li><a class="auto_focus">Focus last:<b>On</b></a></li>
+					<!-- <li>
+						<span>Fetch history</span>
+						<ul>
+							<li><a class="fetch" data-num="1" data-step="minutes">1 minute</a></li>
+							<li><a class="fetch" data-num="5" data-step="minutes">5 minutes</a></li>
+							<li><a class="fetch" data-num="10" data-step="minutes">10 minutes</a></li>
+							<li><a class="fetch" data-num="30" data-step="minutes">30 minutes</a></li>
+							<li><a class="fetch" data-num="1" data-step="hours">1 hour</a></li>
+							<li><a class="fetch" data-num="2" data-step="hours">2 hours</a></li>
+							<li><a class="fetch" data-num="3" data-step="hours">3 hours</a></li>
+							<li><a class="fetch" data-num="4" data-step="hours">4 hours</a></li>
+							<li><a class="fetch" data-num="12" data-step="hours">12 hours</a></li>
+							<li><a class="fetch" data-num="1" data-step="days">1 day</a></li>
+							<li><a class="fetch" data-num="2" data-step="days">2 days</a></li>
+							<li><a class="fetch" data-num="1" data-step="weeks">1 week</a></li>
+							<li><a class="fetch" data-num="2" data-step="weeks">2 week</a></li>
+							<li><a class="fetch" data-num="1" data-step="months">1 month</a></li>
+						</ul>
+					</li> -->
+					<li class="sources">
+						<span>Source agents</span>
+						<ul>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<form class="filter">
+				<button class="clear" type="button">clear</button>
+				<button class="apply" type="submit">apply filter</button>
+				<input placeholder="Query" value=''>
+			</form>
+		</section>
+		<section class="list errored">
+			<div class="error">
+				Loading...
+			</div>
+			<div class="table-container">
+				<table>
+					<thead>
+						<tr>
+						</tr>
+					</thead>
+					<tbody>
+			
+					</tbody>
+				</table>
+			</div>
+		</section>
+	</section>
+	<div class="divider" data-dir="horizontal"></div>
+	<section class="bottom">
+	</section>
+</body>
+</html>

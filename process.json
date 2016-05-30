@@ -1,0 +1,8 @@
+{
+    "apps" : [
+        {
+            "name"        : "marvel-eye",
+            "script"      : "index.js"
+        }
+    ]
+}

@@ -1,0 +1,67 @@
+{
+    "source" : {
+        "local" : "127.0.0.1:8008"
+    },
+    "types": [
+        {
+            "name": "request",
+            "glue" : {
+                "this_prop" : ["requestId"],
+                "that_type" : "response",
+                "that_prop" : ["requestId"]
+            }
+        },
+        {
+            "name": "response",
+            "glue" : [{
+                "this_prop" : ["requestId"],
+                "that_type" : "request",
+                "that_prop" : ["requestId"]
+            }]
+        },
+        {
+            "name" : "file"
+        },
+        {
+            "name" : "oplog"
+        }
+    ],
+    "columns" : [
+        {
+            "name" :"ip",
+            "type" : "request",
+            "prop" : ["headers","x-real-ip"]
+        },
+        {
+            "name" :"url",
+            "type" : "request",
+            "prop" : ["url"],
+            "formatter" : "removeHostname"
+        },
+        {
+            "name" :"http",
+            "type" : "response",
+            "prop" : ["statusCode"]
+        },
+        {
+            "name" :"Status",
+            "type" : "response",
+            "prop" : ["bodyObject","status"]
+        },
+        {
+            "name" :"Status",
+            "type" : "file",
+            "prop" : ["line"]
+        },
+        {
+            "name" :"DB",
+            "type" : "oplog",
+            "prop" : ["op"]
+        },
+        {
+            "name" :"COL",
+            "type" : "oplog",
+            "prop" : ["col"]
+        }
+    ]
+}

@@ -1,0 +1,8 @@
+{
+  "node" : true,
+  "esnext": true,
+  "browser": true,
+  "asi":true,
+  "newcap":false,
+  "strict" : true
+}
