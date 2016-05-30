@@ -1,4 +1,4 @@
-The Marvel Eye
+Marvel Eye
 ========
 
 ####TODO
